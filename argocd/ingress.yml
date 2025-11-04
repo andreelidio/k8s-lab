@@ -7,6 +7,10 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
   namespace: argocd
 spec:
+  tls:
+  - hosts:
+      - argocd.local  
+    secretName: argocd-tls
   ingressClassName: nginx
   rules:
   - host: argocd.local

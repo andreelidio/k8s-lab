@@ -16,4 +16,4 @@ spec:
               service:
                 name: solar-system-service
                 port:
-                  number: 8081
+                  number: 80

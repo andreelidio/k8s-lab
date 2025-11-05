@@ -4,7 +4,7 @@ metadata:
   name: solar-system-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-  namespec: ingress-nginx
+  namespace: ingress-nginx
   ingressClassName: nginx
   rules:
     - host: solar-system.local

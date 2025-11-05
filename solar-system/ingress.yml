@@ -4,8 +4,7 @@ metadata:
   name: solar-system-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-  namespace: argocd-lab
-spec:
+  namespec: ingress-nginx
   ingressClassName: nginx
   rules:
     - host: solar-system.local

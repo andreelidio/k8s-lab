@@ -4,6 +4,7 @@ metadata:
   labels:
     app: solar-system
   name: solar-system
+  namespec: aplications
 spec:
   replicas: 4
   selector:

@@ -4,16 +4,17 @@ metadata:
   name: solar-system-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-  spec:
-    ingressClassName: nginx
-    rules:
-    - host: solar-system.local
-      http:
-        paths:
-        - path: /
-          pathType: Prefix
-          backend:
-            service:
-              name: solar-system-service
-              port:
-                number: 80
+  namespace: aplications
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: solar-system.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: solar-system-service
+            port:
+              number: 80

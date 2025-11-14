@@ -10,7 +10,7 @@ spec:
   - port: 80 
     protocol: TCP
     targetPort: 80 
-    nodePort: 30333
+    nodePort: 30334
   selector:
     app: movies
   type: NodePort

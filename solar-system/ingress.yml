@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: solar-system.local
+  - host: solar-system.test
     http:
       paths:
       - path: /

@@ -21,7 +21,7 @@ spec:
         app: movies
     spec:
       containers:
-      - image: siddharth67/movies-ui:ngnix
+      - image: siddharth67/movies-ui:nginx
         name: movies
         imagePullPolicy: Always
         ports: 

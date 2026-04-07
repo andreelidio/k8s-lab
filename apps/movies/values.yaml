@@ -1,0 +1,16 @@
+name: movies
+app: movies
+
+replicaCount: 3
+
+image:
+  repository: siddharth67/movies-ui
+  tag: nginx
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30080
+  protocol: TCP

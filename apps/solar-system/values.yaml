@@ -1,0 +1,16 @@
+name: solar-system
+app: solar-system
+
+replicaCount: 3
+
+image:
+  repository: siddharth67/solar-system
+  tag: v9
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30081
+  protocol: TCP
